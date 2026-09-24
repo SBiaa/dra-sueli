@@ -1,26 +1,42 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbf7f1;
+  --foreground: #2e2420;
+
+  --color-gold: #b98f2d;
+  --color-gold-light: #d9b969;
+  --color-gold-dark: #8f6d1f;
+  --color-brown: #5c4a3f;
+  --color-brown-dark: #2e2420;
+  --color-cream: #fbf7f1;
+  --color-cream-dark: #f1e7d8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-gold: var(--color-gold);
+  --color-brand-gold-light: var(--color-gold-light);
+  --color-brand-gold-dark: var(--color-gold-dark);
+  --color-brand-brown: var(--color-brown);
+  --color-brand-brown-dark: var(--color-brown-dark);
+  --color-brand-cream: var(--color-cream);
+  --color-brand-cream-dark: var(--color-cream-dark);
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif), Georgia, serif;
 }
