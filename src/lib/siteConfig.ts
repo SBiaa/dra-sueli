@@ -4,7 +4,7 @@ export const siteConfig = {
   oab: "OAB/SP 519.907",
   description:
     "Advocacia previdenciária e cível, atendimento 100% online para todo o Brasil. Aposentadoria, BPC/LOAS, auxílio-doença, revisão de benefícios e Direito Civil.",
-  url: "https://drasueliparizotto.vercel.app",
+  url: "https://dra-sueli-biaa.vercel.app",
   whatsapp: {
     number: "5511999603965",
     defaultMessage:
